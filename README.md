@@ -22,7 +22,7 @@ The experiments are run on a single machine with Intel Core i7-4790 Processor (8
 
 The following graph compares the scalability of the blocking IO with the non-blocking IO model. Each experiment was run 5 times and the median value is used in the scalability and latency graphs. To measure the scalability, I ran the application for both blocking and non-blocking models with different number of worker actors. The scalability graph shows the time that took to complete the 200 tasks with ```4,5,6,..., 24``` worker actors.
 
-Scalability:![Scalability Diagram](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/scalability.png "Scalability Diagram")
+![Scalability Diagram](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/scalability.png "Scalability Diagram")
 
 We see from the above scalability diagram that the non-blocking model (the purple curve) performs better than the blocking one (the green curve) when the number of worker actors are less that 22. For example, when we have 4 worker actors, the non-blocking is completed in 92 seconds, but the blocking model is completed in 238 seconds. This behaviour is expected because in the blobking model, approximately *50%* of the worker actors are blocked and waiting for the IO results, but in the non-blocking model, all the worker actors are performing actively.
 
