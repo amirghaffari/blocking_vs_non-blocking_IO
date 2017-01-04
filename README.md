@@ -15,10 +15,10 @@ To simulate an IO task, the actor sleeps for one of the following random values 
 
 
 # Scalability Measurment
-#### Platform
+## Platform
 The experiments are run on a single machine with Intel Core i7-4790 Processor (8M Cache) and 12.0 GB RAM. The operating system is Windows 7 Professional.
 
-##### Results
+## Results
 
 The following graph compares the scalability of the blocking IO with the non-blocking IO model. Each experiment was run 5 times and the median value is used in the scalability and latency graphs. To measure the scalability, I ran the application for both blocking and non-blocking models with different number of worker actors. The scalability graph shows the time that took to complete the 200 tasks with ```4,5,6,..., 24``` worker actors.
 
