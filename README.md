@@ -40,6 +40,6 @@ sbt clean compile
 sbt "run 10" 
 ```
 
-**Note**) to swich between the blocking and non-blocking IO models, in the *build.sbt* file, change the comment accordingly as shown in the following screen shot
+**Note**) to switch between the blocking and non-blocking IO models, in the *build.sbt* file, change the comment accordingly as shown in the following screen shot
 
-![swich between the blocking and non-blocking IO models](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/switch.png "swich between the blocking and non-blocking IO models")
+![switch between the blocking and non-blocking IO models](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/switch.png "switch between the blocking and non-blocking IO models")
