@@ -31,3 +31,18 @@ However, when the number of worker actors increases, the performance of the bloc
 I conclude when the blocking IO is used, we need more worker actors to handle the computation and when non-blocking model is used we can achieve the best performance with less number of worker actors.
 
 
+## How to Run
+
+```{r, engine='bash', count_lines}
+git clone https://github.com/amirghaffari/blocking_vs_non-blocking_IO.git
+cd blocking_vs_non-blocking_IO
+sbt clean compile
+sbt "run 10" 
+```
+
+$ git clone https://github.com/amirghaffari/Calculating-Pi-Using-Akka.git
+$ cd Calculating-Pi-Using-Akka
+$ sbt compile
+$ sbt run  # to run with 10 worker actors `sbt "run 10"` or run the run.bat file for batch execution on Windows
+
+
