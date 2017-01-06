@@ -30,7 +30,7 @@ We see from the above scalability graph that the non-blocking model (the green c
 
 However, when the number of worker actors increases, the performance of the blocking IO model improves better than the non-blocking one. For example, both models show the same performance for 22 worker actors, i.e. it took 50 seconds for both models to do all the 200 tasks. The reason is that when there are more worker actors, even when 50% of the workers are waiting for the IO results in the blocking IO model, there are still enough worker actors to handle the computational tasks and leverage the available computational resources.
 
-The conclusion is that when the blocking IO model is used, we need more worker actors to handle the computational tasks in comparison with the non-blocking IO model. The reason is that when IO tasks are called synchronously, there more idle actors, and so to leverage the available computational resources more actors is needed. Thus, with proper number of actors the blocking model can perform as good as the non-blocking model.
+The conclusion is that when the blocking IO model is used, we need more worker actors to handle the computational tasks in comparison with the non-blocking IO model. The reason is that when IO tasks are called synchronously, there are more idle actors, and so more actors is needed to leverage the available computational resources. With proper number of actors the blocking model performs as good as the non-blocking model.
 
 
 ## How to Run
@@ -46,6 +46,6 @@ sbt "run 10"
 
 ![switch between the blocking and non-blocking IO models](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/switch.png "switch between the blocking and non-blocking IO models")
 
-**Note**) to run the experiments in a batch mode use the `run.bat` file.
+**Note**) to run the experiments in a batch mode, use the `run.bat` file.
 
 
