@@ -46,6 +46,6 @@ sbt "run 10"
 
 ![switch between the blocking and non-blocking IO models](https://github.com/amirghaffari/blocking_vs_non-blocking_IO/blob/master/switch.png "switch between the blocking and non-blocking IO models")
 
-**Note**) to run the experiments in the batch mode, use the `run.bat` file to
+**Note**) to run the experiments in a batch mode use the `run.bat` file.
 
 
